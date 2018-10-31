@@ -6,7 +6,7 @@ class Solution(object):
         """
         if len(prices) <= 1:
             return 0
-        k = 2
+        k = 1
         dp = [[0 for i in range(len(prices))] for i in range(k+1)]
 
         for i in range(1, k+1):
@@ -19,4 +19,4 @@ class Solution(object):
 if __name__ == '__main__':
     # begin
     s = Solution()
-    print s.maxProfit([3,2,6,5,0,3])
+    print s.maxProfit([7,1,5,3,6,4])
